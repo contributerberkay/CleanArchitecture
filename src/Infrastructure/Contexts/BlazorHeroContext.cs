@@ -10,6 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using BlazorHero.CleanArchitecture.Domain.Entities.ExtendedAttributes;
 using BlazorHero.CleanArchitecture.Domain.Entities.Misc;
+using BlazorHero.CleanArchitecture.Domain.Entities;
 
 namespace BlazorHero.CleanArchitecture.Infrastructure.Contexts
 {
@@ -31,6 +32,8 @@ namespace BlazorHero.CleanArchitecture.Infrastructure.Contexts
         public DbSet<Document> Documents { get; set; }
         public DbSet<DocumentType> DocumentTypes { get; set; }
         public DbSet<DocumentExtendedAttribute> DocumentExtendedAttributes { get; set; }
+        public DbSet<Statement> Statements { get; set; }
+        public DbSet<Topic> Topics { get; set; }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new())
         {

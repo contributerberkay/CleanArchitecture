@@ -32,6 +32,31 @@ namespace BlazorHero.CleanArchitecture.Shared.Constants.Permission
             public const string Import = "Permissions.Brands.Import";
         }
 
+        [DisplayName("Statements")]
+        [Description("Statements Permissions")]
+        public static class Statements
+        {
+            public const string View = "Permissions.Statements.View";
+            public const string Create = "Permissions.Statements.Create";
+            public const string Edit = "Permissions.Statements.Edit";
+            public const string Delete = "Permissions.Statements.Delete";
+            public const string Export = "Permissions.Statements.Export";
+            public const string Search = "Permissions.Statements.Search";
+        }
+
+        [DisplayName("Topics")]
+        [Description("Topics Permissions")]
+        public static class Topics
+        {
+            public const string View = "Permissions.Topics.View";
+            public const string Create = "Permissions.Topics.Create";
+            public const string Edit = "Permissions.Topics.Edit";
+            public const string Delete = "Permissions.Topics.Delete";
+            public const string Export = "Permissions.Topics.Export";
+            public const string Search = "Permissions.Topics.Search";
+            public const string Import = "Permissions.Topics.Import";
+        }
+
         [DisplayName("Documents")]
         [Description("Documents Permissions")]
         public static class Documents

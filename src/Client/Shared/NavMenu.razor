@@ -85,6 +85,18 @@
                 @_localizer["Brands"]
             </MudNavLink>
         }
+        @if (_canViewProducts)
+        {
+            <MudNavLink Href="/agenda/statements" Icon="@Icons.Material.Outlined.CallToAction">
+                statements
+            </MudNavLink>
+        }
+        @if (_canViewBrands)
+        {
+            <MudNavLink Href="/agenda/topics" Icon="@Icons.Material.Outlined.CallToAction">
+                topics
+            </MudNavLink>
+        }
     }
 </MudNavMenu>
 

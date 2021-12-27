@@ -26,6 +26,8 @@ namespace BlazorHero.CleanArchitecture.Infrastructure.Extensions
         {
             return services
                 .AddTransient(typeof(IRepositoryAsync<,>), typeof(RepositoryAsync<,>))
+                .AddTransient<IStatementRepository, StatementRepository>()
+                .AddTransient<ITopicRepository, TopicRepository>()
                 .AddTransient<IProductRepository, ProductRepository>()
                 .AddTransient<IBrandRepository, BrandRepository>()
                 .AddTransient<IDocumentRepository, DocumentRepository>()

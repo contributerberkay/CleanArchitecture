@@ -60,10 +60,10 @@ namespace BlazorHero.CleanArchitecture.Infrastructure
                 //Check if User Exists
                 var superUser = new BlazorHeroUser
                 {
-                    FirstName = "Mukesh",
-                    LastName = "Murugan",
-                    Email = "mukesh@blazorhero.com",
-                    UserName = "mukesh",
+                    FirstName = "Erdem",
+                    LastName = "Berkay",
+                    Email = "biproberkay@gmail.com",
+                    UserName = "berkay",
                     EmailConfirmed = true,
                     PhoneNumberConfirmed = true,
                     CreatedOn = DateTime.Now,
